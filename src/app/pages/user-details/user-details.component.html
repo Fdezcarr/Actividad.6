@@ -1,0 +1,15 @@
+@if(this.singleUser) {
+<div class="container-responsive">
+    <div class="card">
+        <img src="{{this.singleUser.image}}" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">{{this.singleUser.first_name}} {{this.singleUser.last_name}}</h5>
+            <p class="card-text">{{this.singleUser.email}}</p>
+            <div class="button-group">
+                <button (click)="onDelete(this.singleUser._id)" class="btn btn-danger">Eliminar</button>
+                <button (click)="onEdit()" class="btn btn-warning">Modificar</button>
+            </div>
+        </div>
+    </div>
+</div>
+}

@@ -1,0 +1,7 @@
+<section class="users">
+    <div class="flex-row">
+        @for(user of arrayUsers;track user._id){
+        <app-user-single class="single-user" [user]="user"></app-user-single>
+        }
+    </div>
+</section>

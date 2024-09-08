@@ -1,0 +1,9 @@
+<div class="card" style="width: 12rem;">
+    <img src="{{user.image}}" class="card-img-top" alt="{{user.first_name}}">
+    <div class="card-body">
+        <p class="card-text">{{user.first_name}} {{user.last_name}}</p>
+    </div>
+    <div class="footer text-center mb-3">
+        <div [routerLink]="['/user-details/', user._id]" class="btn btn-primary">Ver detalles</div>
+    </div>
+</div>

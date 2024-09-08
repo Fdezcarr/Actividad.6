@@ -1,0 +1,37 @@
+@if(userDataObj) {
+
+<div class="container-responsive">
+    <div class="card card-reduce">
+        <img src="{{userDataObj.image}}" class="card-img-top" alt="">
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="imageUrl" class="form-label">Url imagen</label>
+                <input type="email" class="form-control" id="imageUrl" [(ngModel)]="userDataObj.image"
+                    value="{{userDataObj.image}}">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="name" [(ngModel)]="userDataObj.first_name"
+                    value="{{userDataObj.first_name}}">
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Apellidos</label>
+                <input type="email" class="form-control" id="lastName" [(ngModel)]="userDataObj.last_name"
+                    value="{{userDataObj.last_name}}">
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Nombre de usuario</label>
+                <input type="email" class="form-control" id="username" [(ngModel)]="userDataObj.username"
+                    value="{{userDataObj.username}}">
+            </div>
+            <div class="mb-3">
+                <label for="mail" class="form-label">Nombre de usuario</label>
+                <input type="email" class="form-control" id="mail" [(ngModel)]="userDataObj.email"
+                    value="{{userDataObj.email}}">
+            </div>
+            <button (click)="onSave()" class="btn btn-warning">Modificar</button>
+        </div>
+    </div>
+</div>
+
+}

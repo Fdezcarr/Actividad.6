@@ -1,0 +1,13 @@
+.container-responsive .card {
+  width: 300px;
+  margin: auto;
+}
+
+.container-responsive .card-text {
+  font-size: 13px;
+}
+
+.container-responsive .button-group {
+  display: flex;
+  justify-content: space-evenly;
+}
